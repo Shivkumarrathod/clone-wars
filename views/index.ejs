@@ -3,8 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>X</title>
     <link rel="stylesheet" href="/style.css" />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .main-div {
+        display: flex;
+        align-items: center;
+        height: 90vh;
+      }
+
+      .content {
+        height: 100%;
+        padding-left: 50px;
+        padding-top: 50px;
+      }
+
+      .logo {
+        width: 55%;
+        text-align: center;
+      }
+
+      .bottom {
+        height: 72px;
+        align-items: end;
+      }
+      .happening {
+        font-size: 70px;
+      }
+      .join {
+        font-size: 30px;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 60%;
+        color: black;
+      }
+      .button {
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      .create {
+        margin-top: 20px;
+        background-color: #1da1f2;
+        color: white;
+      }
+
+      .horizontzl_line {
+        border: 1px solid rgb(193, 186, 186);
+        width: 130px;
+        height: 1px;
+        margin: 12px;
+        background-color: white;
+      }
+      .flex_or {
+        display: flex;
+        gap: 6px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -24,8 +96,18 @@
           </svg>
         </div>
         <div class="content">
-          <p>Happening now</p>
-          <p>join today.</p>
+          <p class="happening">Happening now</p>
+          <p class="join">join today.</p>
+          <div class="buttons">
+            <div class="button">Signup with Google</div>
+            <div class="button">Signup with Apple</div>
+            <div class="flex_or" style="color: white">
+              <div class="horizontzl_line"></div>
+              <div class="ortext">or</div>
+              <div class="horizontzl_line"></div>
+            </div>
+            <div class="button create">Create Account</div>
+          </div>
         </div>
       </div>
       <footer class="bottom">bottom</footer>
